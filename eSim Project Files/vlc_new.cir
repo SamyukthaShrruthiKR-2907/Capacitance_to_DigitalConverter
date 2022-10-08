@@ -1,0 +1,23 @@
+* /home/samyukthashrruthi/eSim-2.3/library/SubcircuitLibrary/vlc_new/vlc_new.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sat 08 Oct 2022 09:05:48 PM IST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC1  Net-_SC1-Pad1_ Net-_SC1-Pad2_ GND GND sky130_fd_pr__nfet_01v8		
+SC7  Net-_SC10-Pad1_ Net-_SC10-Pad2_ Net-_SC7-Pad3_ Net-_SC7-Pad3_ sky130_fd_pr__nfet_01v8		
+SC5  Net-_SC10-Pad2_ Net-_SC3-Pad2_ Net-_SC5-Pad3_ Net-_SC5-Pad3_ sky130_fd_pr__nfet_01v8		
+SC8  Net-_SC7-Pad3_ Net-_SC1-Pad2_ GND GND sky130_fd_pr__nfet_01v8		
+SC4  Net-_SC3-Pad3_ Net-_SC1-Pad1_ Net-_SC2-Pad1_ Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8		
+SC9  Net-_SC10-Pad3_ Net-_SC1-Pad1_ Net-_SC2-Pad1_ Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8		
+SC3  Net-_SC10-Pad2_ Net-_SC3-Pad2_ Net-_SC3-Pad3_ Net-_SC3-Pad3_ sky130_fd_pr__pfet_01v8		
+SC10  Net-_SC10-Pad1_ Net-_SC10-Pad2_ Net-_SC10-Pad3_ Net-_SC10-Pad3_ sky130_fd_pr__pfet_01v8		
+v1  Net-_SC2-Pad1_ GND DC		
+SC2  Net-_SC2-Pad1_ Net-_SC1-Pad1_ Net-_SC1-Pad1_ ? sky130_fd_pr__pfet_01v8		
+U1  ? ? dac_bridge_1		
+SC6  Net-_SC5-Pad3_ Net-_SC1-Pad2_ GND GND sky130_fd_pr__nfet_01v8		
+U2  Net-_SC1-Pad2_ Net-_SC3-Pad2_ Net-_SC10-Pad1_ PORT		
+
+.end

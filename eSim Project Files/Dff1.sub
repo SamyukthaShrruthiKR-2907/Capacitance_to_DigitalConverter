@@ -1,0 +1,30 @@
+* Subcircuit Dff1
+.subckt Dff1 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ 
+* c:\fossee\esim\library\subcircuitlibrary\dff1\dff1.cir
+* u3  net-_u2-pad3_ net-_u1-pad1_ net-_u2-pad2_ sam_nand2
+* u2  net-_u2-pad1_ net-_u2-pad2_ net-_u2-pad3_ sam_nand2
+* u6  net-_u2-pad2_ net-_u6-pad2_ net-_u1-pad3_ sam_nand2
+* u5  net-_u4-pad4_ net-_u1-pad2_ net-_u2-pad1_ sam_nand2
+* u4  net-_u2-pad2_ net-_u1-pad1_ net-_u2-pad1_ net-_u4-pad4_ sam_nand3
+* u7  net-_u1-pad3_ net-_u4-pad4_ net-_u6-pad2_ sam_nand2
+a1 [net-_u2-pad3_ ] [net-_u1-pad1_ ] [net-_u2-pad2_ ] u3
+a2 [net-_u2-pad1_ ] [net-_u2-pad2_ ] [net-_u2-pad3_ ] u2
+a3 [net-_u2-pad2_ ] [net-_u6-pad2_ ] [net-_u1-pad3_ ] u6
+a4 [net-_u4-pad4_ ] [net-_u1-pad2_ ] [net-_u2-pad1_ ] u5
+a5 [net-_u2-pad2_ ] [net-_u1-pad1_ ] [net-_u2-pad1_ ] [net-_u4-pad4_ ] u4
+a6 [net-_u1-pad3_ ] [net-_u4-pad4_ ] [net-_u6-pad2_ ] u7
+* Schematic Name:                             sam_nand2, NgSpice Name: sam_nand2
+.model u3 sam_nand2(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             sam_nand2, NgSpice Name: sam_nand2
+.model u2 sam_nand2(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             sam_nand2, NgSpice Name: sam_nand2
+.model u6 sam_nand2(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             sam_nand2, NgSpice Name: sam_nand2
+.model u5 sam_nand2(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             sam_nand3, NgSpice Name: sam_nand3
+.model u4 sam_nand3(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Schematic Name:                             sam_nand2, NgSpice Name: sam_nand2
+.model u7 sam_nand2(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 )
+* Control Statements
+
+.ends Dff1

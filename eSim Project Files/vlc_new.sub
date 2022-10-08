@@ -1,0 +1,21 @@
+* Subcircuit vlc_new
+.subckt vlc_new net-_sc1-pad2_ net-_sc3-pad2_ net-_sc10-pad1_ 
+* /home/samyukthashrruthi/esim-2.3/library/subcircuitlibrary/vlc_new/vlc_new.cir
+xsc1 net-_sc1-pad1_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8
+xsc7 net-_sc10-pad1_ net-_sc10-pad2_ net-_sc7-pad3_ net-_sc7-pad3_ sky130_fd_pr__nfet_01v8
+xsc5 net-_sc10-pad2_ net-_sc3-pad2_ net-_sc5-pad3_ net-_sc5-pad3_ sky130_fd_pr__nfet_01v8
+xsc8 net-_sc7-pad3_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8
+xsc4 net-_sc3-pad3_ net-_sc1-pad1_ net-_sc2-pad1_ net-_sc2-pad1_ sky130_fd_pr__pfet_01v8
+xsc9 net-_sc10-pad3_ net-_sc1-pad1_ net-_sc2-pad1_ net-_sc2-pad1_ sky130_fd_pr__pfet_01v8
+xsc3 net-_sc10-pad2_ net-_sc3-pad2_ net-_sc3-pad3_ net-_sc3-pad3_ sky130_fd_pr__pfet_01v8
+xsc10 net-_sc10-pad1_ net-_sc10-pad2_ net-_sc10-pad3_ net-_sc10-pad3_ sky130_fd_pr__pfet_01v8
+v1 net-_sc2-pad1_ gnd  dc 0
+xsc2 net-_sc2-pad1_ net-_sc1-pad1_ net-_sc1-pad1_ ? sky130_fd_pr__pfet_01v8
+* u1  ? ? dac_bridge_1
+xsc6 net-_sc5-pad3_ net-_sc1-pad2_ gnd gnd sky130_fd_pr__nfet_01v8
+a1 [? ] [? ] u1
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u1 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 )
+* Control Statements
+
+.ends vlc_new

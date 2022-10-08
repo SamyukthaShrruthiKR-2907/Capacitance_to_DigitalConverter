@@ -1,0 +1,73 @@
+* C:\Users\Samyuktha\eSim-Workspace\CaptoDig\CaptoDig.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/08/22 14:17:41
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC1  Net-_SC1-Pad1_ GND Net-_SC1-Pad3_ Net-_SC1-Pad3_ sky130_fd_pr__pfet_01v8_hvt		
+SC2  Net-_SC2-Pad1_ Net-_SC2-Pad2_ Net-_SC1-Pad1_ Net-_SC1-Pad3_ sky130_fd_pr__pfet_01v8_hvt		
+SC3  Net-_SC2-Pad1_ Net-_SC2-Pad2_ Net-_SC3-Pad3_ GND sky130_fd_pr__nfet_01v8		
+SC4  Net-_SC3-Pad3_ Net-_SC4-Pad2_ GND GND sky130_fd_pr__nfet_01v8		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ sam_mux		
+U2  Net-_U2-Pad1_ Net-_SC1-Pad3_ Net-_U2-Pad3_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ adc_bridge_3		
+U3  Net-_U1-Pad4_ Net-_SC2-Pad2_ dac_bridge_1		
+v1  Net-_U2-Pad1_ GND DC		
+v2  Net-_SC4-Pad2_ GND DC		
+X1  ip1 Net-_SC2-Pad1_ Net-_X1-Pad3_ VLC_new		
+X2  Net-_X1-Pad3_ Net-_SC2-Pad1_ Net-_X2-Pad3_ VLC_new		
+X3  Net-_X2-Pad3_ Net-_SC2-Pad1_ Net-_U2-Pad3_ VLC_new		
+SC5  Net-_SC2-Pad1_ GND sky130_fd_pr__cap_mim_m3_1		
+v4  ip1 GND pwl		
+X4  ip1 Net-_X10-Pad2_ Net-_U7-Pad1_ VLC_new		
+F1  Net-_F1-Pad1_ Net-_F1-Pad2_ Net-_F1-Pad3_ DFF_new		
+X5  Net-_U2-Pad3_ Net-_X11-Pad2_ Net-_U7-Pad2_ VLC_new		
+U5  ip1 Net-_U2-Pad3_ Net-_F1-Pad1_ Net-_F1-Pad2_ adc_bridge_2		
+X6  Net-_U7-Pad1_ Net-_X10-Pad2_ Net-_U9-Pad1_ VLC_new		
+F2  Net-_F2-Pad1_ Net-_F2-Pad2_ Net-_F2-Pad3_ DFF_new		
+X7  Net-_U7-Pad2_ Net-_X11-Pad2_ Net-_U9-Pad2_ VLC_new		
+U7  Net-_U7-Pad1_ Net-_U7-Pad2_ Net-_F2-Pad1_ Net-_F2-Pad2_ adc_bridge_2		
+v5  Net-_X10-Pad2_ GND DC		
+U6  Net-_F1-Pad3_ Net-_U17-Pad8_ dac_bridge_1		
+U8  Net-_F2-Pad3_ Net-_U17-Pad7_ dac_bridge_1		
+v6  Net-_X11-Pad2_ GND DC		
+X8  Net-_U9-Pad1_ Net-_X10-Pad2_ Net-_U11-Pad1_ VLC_new		
+F3  Net-_F3-Pad1_ Net-_F3-Pad2_ Net-_F3-Pad3_ DFF_new		
+X9  Net-_U9-Pad2_ Net-_X11-Pad2_ Net-_U11-Pad2_ VLC_new		
+U9  Net-_U9-Pad1_ Net-_U9-Pad2_ Net-_F3-Pad1_ Net-_F3-Pad2_ adc_bridge_2		
+U10  Net-_F3-Pad3_ Net-_U10-Pad2_ dac_bridge_1		
+X10  Net-_U11-Pad1_ Net-_X10-Pad2_ Net-_U13-Pad1_ VLC_new		
+F4  Net-_F4-Pad1_ Net-_F4-Pad2_ Net-_F4-Pad3_ DFF_new		
+X11  Net-_U11-Pad2_ Net-_X11-Pad2_ Net-_U13-Pad2_ VLC_new		
+U11  Net-_U11-Pad1_ Net-_U11-Pad2_ Net-_F4-Pad1_ Net-_F4-Pad2_ adc_bridge_2		
+U12  Net-_F4-Pad3_ Net-_U12-Pad2_ dac_bridge_1		
+X12  Net-_U13-Pad1_ Net-_X10-Pad2_ Net-_U15-Pad1_ VLC_new		
+F5  Net-_F5-Pad1_ Net-_F5-Pad2_ Net-_F5-Pad3_ DFF_new		
+X13  Net-_U13-Pad2_ Net-_X11-Pad2_ Net-_U15-Pad2_ VLC_new		
+U13  Net-_U13-Pad1_ Net-_U13-Pad2_ Net-_F5-Pad1_ Net-_F5-Pad2_ adc_bridge_2		
+U14  Net-_F5-Pad3_ Net-_U14-Pad2_ dac_bridge_1		
+X14  Net-_U15-Pad1_ Net-_X10-Pad2_ Net-_U19-Pad1_ VLC_new		
+F6  Net-_F6-Pad1_ Net-_F6-Pad2_ Net-_F6-Pad3_ DFF_new		
+X15  Net-_U15-Pad2_ Net-_X11-Pad2_ Net-_U19-Pad2_ VLC_new		
+U15  Net-_U15-Pad1_ Net-_U15-Pad2_ Net-_F6-Pad1_ Net-_F6-Pad2_ adc_bridge_2		
+U18  Net-_F6-Pad3_ Net-_U17-Pad3_ dac_bridge_1		
+X16  Net-_U19-Pad1_ Net-_X10-Pad2_ Net-_U25-Pad1_ VLC_new		
+F7  Net-_F7-Pad1_ Net-_F7-Pad2_ Net-_F7-Pad3_ DFF_new		
+X17  Net-_U19-Pad2_ Net-_X11-Pad2_ Net-_U25-Pad2_ VLC_new		
+U19  Net-_U19-Pad1_ Net-_U19-Pad2_ Net-_F7-Pad1_ Net-_F7-Pad2_ adc_bridge_2		
+U21  Net-_F7-Pad3_ Net-_U17-Pad2_ dac_bridge_1		
+F8  Net-_F8-Pad1_ Net-_F8-Pad2_ Net-_F8-Pad3_ DFF_new		
+U25  Net-_U25-Pad1_ Net-_U25-Pad2_ Net-_F8-Pad1_ Net-_F8-Pad2_ adc_bridge_2		
+U26  Net-_F8-Pad3_ Net-_U17-Pad1_ dac_bridge_1		
+U17  Net-_U17-Pad1_ Net-_U17-Pad2_ Net-_U17-Pad3_ Net-_U14-Pad2_ Net-_U12-Pad2_ Net-_U10-Pad2_ Net-_U17-Pad7_ Net-_U17-Pad8_ Net-_U16-Pad1_ Net-_U16-Pad2_ Net-_U16-Pad3_ Net-_U16-Pad4_ Net-_U16-Pad5_ Net-_U16-Pad6_ Net-_U16-Pad7_ Net-_U16-Pad8_ adc_bridge_8		
+U16  Net-_U16-Pad1_ Net-_U16-Pad2_ Net-_U16-Pad3_ Net-_U16-Pad4_ Net-_U16-Pad5_ Net-_U16-Pad6_ Net-_U16-Pad7_ Net-_U16-Pad8_ Net-_U16-Pad9_ Net-_U16-Pad10_ Net-_U16-Pad11_ samyuktha_encoder		
+U20  Net-_U16-Pad9_ Net-_U16-Pad10_ Net-_U16-Pad11_ op1 op2 op3 dac_bridge_3		
+U24  op1 plot_v1		
+U22  op2 plot_v1		
+U23  op3 plot_v1		
+U4  ip1 plot_v1		
+v3  Net-_SC1-Pad3_ GND DC		
+scmode1  SKY130mode		
+
+.end

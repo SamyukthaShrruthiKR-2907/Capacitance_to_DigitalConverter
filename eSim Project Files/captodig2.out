@@ -1,0 +1,11 @@
+optran: no such command available in ngspice
+
+Compatibility modes selected: hs a
+
+
+Circuit: * /home/samyukthashrruthi/esim-workspace/captodig2/captodig2.cir
+
+Error: unknown subckt: x1.xsc1 x1.net-_sc1-pad1_ ip1 0 0 sky130_fd_pr__nfet_01v8
+    Simulation interrupted due to error!
+
+Error: there aren't any circuits loaded.
